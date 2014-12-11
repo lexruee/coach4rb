@@ -116,12 +116,15 @@ class TestUserCoach < MiniTest::Test
 
 
   def test_should_authenticate_user
-    assert @coach.authenticate('arueedlinger','test')
+    user = @coach.authenticate('arueedlinger','test')
+    assert user
+    assert user.is_a?(Coach4rb::Resource::User)
+    assert user.real_name
   end
 
 
   def test_should_not_authenticate_user
-    refute @coach.authenticate('arueedlinger','sajdhjkasdjka')
+    assert @coach.authenticate('arueedlinger','sajdhjkasdjka') == false
   end
 
 

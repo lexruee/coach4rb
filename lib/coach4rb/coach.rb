@@ -21,7 +21,7 @@ module Coach4rb
     #
     # @param username
     # @param password
-    # @return [Boolean]
+    # @return [User]
     #
     # ====Example
     #
@@ -32,7 +32,12 @@ module Coach4rb
         options = {authorization: basic_auth_encryption(username, password)}
         url = url_for_path('/authenticateduser/')
         client.get(url, options) do |response|
-          response.code == 200
+          if response.code == 200
+            a_hash = parse response
+            Resource::User.from_coach a_hash
+          else
+            false
+          end
         end
       rescue
         raise 'Error: Could not authenticate user!'
