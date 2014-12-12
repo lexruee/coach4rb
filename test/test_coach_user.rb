@@ -129,13 +129,15 @@ class TestUserCoach < MiniTest::Test
 
 
   def test_should_create_a_user
-    @coach.create_user do |user|
+    user = @coach.create_user do |user|
       user.real_name = 'the hoff'
       user.username = 'wantsomemoney' + DateTime.now.to_time.to_i.to_s
       user.password = 'test'
       user.email = 'test@test.com'
-      user.public_visible = Coach4rb::Privacy::Public
+      #user.public_visible = Coach4rb::Privacy::Public
     end
+    assert user
+    pp user
   end
 
 

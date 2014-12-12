@@ -13,6 +13,7 @@ module Coach4rb
 
       alias_method :entry_date, :entrydate
       alias_method :entry_location, :entrylocation
+      alias_method :entry_duration, :entryduration
 
 
       def self.from_coach(a_hash)
