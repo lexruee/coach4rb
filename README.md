@@ -76,7 +76,7 @@ require 'coach4rb'
 ## Documentation
 
 - [Rubygem website](https://rubygems.org/gems/coach4rb)
-- [Documentation](http://www.rubydoc.info/gems/coach4rb/0.0.3/frames)
+- [Documentation](http://lexruee.github.io/coach4rb/doc/)
 - [Tests](https://github.com/lexruee/coach4rb/tree/master/test)
 
 For a better understanding how the client works see the code examples in the file: [lib/coach4rb/coach.rb](https://github.com/lexruee/coach4rb/blob/master/lib/coach4rb/coach.rb)
