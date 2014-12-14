@@ -39,13 +39,13 @@ module Coach4rb
   # @return [Coach]
   #
   # ====Example
-  #
-  # @client = Coach4rb::Client.new(
-  #     scheme: 'http',
-  #     host:  'diufvm31.unifr.ch',
-  #     port:  8090,
-  #     path:  '/CyberCoachServer/resources'
-  # )
+  # @example
+  #   @client = Coach4rb::Client.new(
+  #       scheme: 'http',
+  #       host:  'diufvm31.unifr.ch',
+  #       port:  8090,
+  #       path:  '/CyberCoachServer/resources'
+  #   )
   #
   def self.configure(config)
     client = Client.new(

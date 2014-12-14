@@ -24,8 +24,8 @@ module Coach4rb
     # @return [User]
     #
     # ====Example
-    #
-    # @coach.authenticate('arueedlinger', 'test')
+    # @example
+    #   @coach.authenticate('arueedlinger', 'test')
     #
     def authenticate(username, password)
       begin
@@ -50,9 +50,10 @@ module Coach4rb
     # @param username
     # @return [Boolean]
     #
-    # ====Example
+    # ====Examples
     #
-    # @coach.username_available('arueedlinger')
+    # @example
+    #   @coach.username_available('arueedlinger')
     #
     def username_available?(username)
       # check if username is alphanumeric and that it contains at least one letter
@@ -66,9 +67,9 @@ module Coach4rb
     # @param username
     # @return [Boolean]
     #
-    # ====Example
-    #
-    # @coach.user_exsists?('arueedlinger')
+    # ====Examples
+    # @example
+    #   @coach.user_exsists?('arueedlinger')
     #
     def user_exists?(username)
       begin
@@ -84,9 +85,9 @@ module Coach4rb
     #
     # @return [Boolean]
     #
-    # ====Example
-    #
-    # @coach.available?
+    # ====Examples
+    # @example
+    #   @coach.available?
     #
     def available?
       client.get(url_for_path('/')) { |response| response.code == 200 } rescue false
@@ -100,14 +101,14 @@ module Coach4rb
     # @return [User]
     #
     # ====Examples
-    #
-    # @coach.create_user do |user|
-    #   user.real_name= 'the hoff'
-    #   user.username= 'wantsomemoney'
-    #   user.password= 'test'
-    #   user.email= 'test@test.com'
-    #   user.public_visible= 2
-    # end
+    # @example
+    #   @coach.create_user do |user|
+    #     user.real_name= 'the hoff'
+    #     user.username= 'wantsomemoney'
+    #     user.password= 'test'
+    #     user.email= 'test@test.com'
+    #     user.public_visible= 2
+    #   end
     #
     def create_user(options={}, &block)
       builder = Builder::User.new(public_visible: Privacy::Public)
@@ -134,13 +135,13 @@ module Coach4rb
     # @return [User]
     #
     # ====Examples
-    #
-    # @coach.update_user(user) do |user
-    #   user.real_name= 'the hoff'
-    #   user.password= 'test'
-    #   user.email= 'test@test.com'
-    #   user.public_visible= 2
-    # end
+    # @example
+    #   @coach.update_user(user) do |user
+    #     user.real_name= 'the hoff'
+    #     user.password= 'test'
+    #     user.email= 'test@test.com'
+    #     user.public_visible= 2
+    #   end
     #
     def update_user(user, options={}, &block)
       raise 'Error: Param user is nil!' if user.nil?
@@ -172,9 +173,10 @@ module Coach4rb
     # @return [Boolean]
     #
     # ====Examples
-    #
-    # @coach.delete_user(user)
-    # @coach.delete_user('arueedlinger')
+    # @example
+    #   @coach.delete_user(user)
+    # @example
+    #   @coach.delete_user('arueedlinger')
     #
     def delete_user(user, options={})
       raise 'Error: Param user is nil!' if user.nil?
@@ -204,12 +206,13 @@ module Coach4rb
     # @return [Partnership]
     #
     # ====Examples
+    # @example
+    #   @coach.create_partnership('arueedlinger','wanze2')
     #
-    # @coach.create_partnership('arueedlinger','wanze2')
-    #
-    # @coach.create_partnership('arueedlinger','wanze2') do |p|
-    #    p.public_visible = Coach4rb::Private
-    # end
+    # @example
+    #   @coach.create_partnership('arueedlinger','wanze2') do |p|
+    #      p.public_visible = Coach4rb::Private
+    #   end
     #
     def create_partnership(first_user, second_user, options={}, &block)
       raise 'Error: Param first_user is nil!' if first_user.nil?
@@ -297,15 +300,17 @@ module Coach4rb
     # @return [Subscription]
     #
     # ====Examples
+    # @example
+    #   @coach.create_subscription(user, :boxing) do |subscription|
+    #     subscription.public_visible = Coach4rb::Privacy::Public
+    #   end
     #
-    # @coach.create_subscription(user, :boxing) do |subscription|
-    #   subscription.public_visible = Coach4rb::Privacy::Public
-    # end
+    # @example
+    #   @coach.create_subscription(user, :boxing)
     #
-    # @coach.create_subscription(user, :boxing)
-    #
-    # partnership = @coach.partnership 'arueedlinger', 'asarteam5'
-    # @coach.subscribe(partnership, :running)
+    # @example
+    #   partnership = @coach.partnership 'arueedlinger', 'asarteam5'
+    #   @coach.subscribe(partnership, :running)
     #
     def create_subscription(user_partnership, sport, options={}, &block)
       raise 'Error: Param user_partnership is nil!' if user_partnership.nil?
@@ -348,12 +353,13 @@ module Coach4rb
     # @return [Boolean]
     #
     # ====Examples
+    # @example
+    #   user = @coach.user 'arueedlinger'
+    #   @coach.unsubscribe(user, :boxing)
     #
-    # user = @coach.user 'arueedlinger'
-    # @coach.unsubscribe(user, :boxing)
-    #
-    # partnership = @coach.partnership 'arueedlinger', 'asarteam5'
-    # @coach.unsubscribe(partnership, :running)
+    # @example
+    #   partnership = @coach.partnership 'arueedlinger', 'asarteam5'
+    #   @coach.unsubscribe(partnership, :running)
     #
     def unsubscribe(user_partnership, sport, options={})
       raise 'Error: Param user_partnership is nil!' if user_partnership.nil?
@@ -410,16 +416,18 @@ module Coach4rb
     # @return [Entry|Boolean]
     #
     # ====Examples
-    # entry = @coach.create_entry(@user, :running) do |e|
-    #   e.comment = 'test'
-    #   e.number_of_rounds = 10
-    #   e.public_visible = Coach4rb::Privacy::Public
-    # end
+    # @example
+    #   entry = @coach.create_entry(@user, :running) do |e|
+    #      e.comment = 'test'
+    #      e.number_of_rounds = 10
+    #      e.public_visible = Coach4rb::Privacy::Public
+    #   end
     #
-    # entry = @coach.create_entry(@user, :soccer) do |e|
-    #   e.comment = 'test'
-    #   e.number_of_rounds = 10
-    # end
+    # @example
+    #   entry = @coach.create_entry(@user, :soccer) do |e|
+    #     e.comment = 'test'
+    #     e.number_of_rounds = 10
+    #   end
     #
     def create_entry(user_partnership, sport, options={}, &block)
       raise 'Error: Param user_partnership is nil!' if user_partnership.nil?
@@ -461,16 +469,17 @@ module Coach4rb
     # @return [Entry|Boolean]
     #
     # ====Examples
+    # @example
+    #   entry = @coach.entry_by_uri '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
+    #   updated_entry = @proxy.update_entry(entry) do |entry|
+    #     entry.comment = 'Test!!'
+    #   end
     #
-    # entry = @coach.entry_by_uri '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
-    # updated_entry = @proxy.update_entry(entry) do |entry|
-    #   entry.comment = 'Test!!'
-    # end
-    #
-    # uri = '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
-    # res = @proxy.update_entry(uri) do |entry|
-    #   entry.comment = 'Test!'
-    # end
+    # @example
+    #   uri = '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
+    #   res = @proxy.update_entry(uri) do |entry|
+    #     entry.comment = 'Test!'
+    #   end
     #
     def update_entry(entry, options={}, &block)
       raise 'Error: Param entry is nil!' if entry.nil?
@@ -531,10 +540,12 @@ module Coach4rb
     # @return [User]
     #
     # ====Examples
-    #
-    # user = @coach.user a_user
-    # user = @coach.user 'arueedlinger'
-    # user = @coach.user 'arueedlinger', {}
+    # @example
+    #   user = @coach.user a_user
+    # @example
+    #   user = @coach.user 'arueedlinger'
+    # @example
+    #   user = @coach.user 'arueedlinger', query: { start: 0, soze: 10 }
     #
     def user(user, options={})
       raise 'Error: Param user is nil!' if user.nil?
@@ -560,8 +571,12 @@ module Coach4rb
     # @param [Hash] options
     # @return [User]
     #
-    # user = @coach.user_by_uri '/CyberCoachServer/resources/users/arueedlinger', {}
-    # user = @coach.user_by_uri '/CyberCoachServer/resources/users/arueedlinger'
+    # ====Examples
+    #
+    # @example
+    #   user = @coach.user_by_uri '/CyberCoachServer/resources/users/arueedlinger', query: { start: 0, soze: 10 }
+    # @example
+    #   user = @coach.user_by_uri '/CyberCoachServer/resources/users/arueedlinger'
     #
     def user_by_uri(uri, options={})
       raise 'Error: Param uri is nil!' if uri.nil?
@@ -581,8 +596,10 @@ module Coach4rb
     # @return [PageResource]
     #
     # ====Examples
-    # users = @coach.users
-    # users = @coach.users query: { start: 0, size: 10}
+    # @example
+    #   users = @coach.users
+    # @example
+    #   users = @coach.users query: { start: 0, size: 10}
     #
     def users(options={query: {}})
       url = url_for_path(user_path)
@@ -600,9 +617,9 @@ module Coach4rb
     # @param [Hash] options
     # @return [Partnership]
     #
-    # ====Example
-    #
-    # partnership = @coach.partnership_by_uri '/CyberCoachServer/resources/partnerships/arueedlinger;asarteam5/'
+    # ====Examples
+    # @example
+    #   partnership = @coach.partnership_by_uri '/CyberCoachServer/resources/partnerships/arueedlinger;asarteam5/'
     #
     def partnership_by_uri(uri, options={})
       raise 'Error: Param uri is nil!' if uri.nil?
@@ -623,9 +640,9 @@ module Coach4rb
     # @param [Hash] options
     # @return [Partnership]
     #
-    # ====Example
-    #
-    # partnership = @coach.partnership 'arueedlinger', 'asarteam5'
+    # ====Examples
+    # @example
+    #   partnership = @coach.partnership 'arueedlinger', 'asarteam5'
     #
     def partnership(first_username, second_username, options={})
       raise 'Error: Param first_username is nil!' if first_username.nil?
@@ -646,9 +663,10 @@ module Coach4rb
     # @return [PageResource]
     #
     # ====Examples
-    #
-    # partnerships = @coach.partnerships
-    # partnerships = @coach.partnerships query: { start: 0, size: 10}
+    # @example
+    #   partnerships = @coach.partnerships
+    # @example
+    #   partnerships = @coach.partnerships query: { start: 0, size: 10}
     #
     def partnerships(options={query: {}})
       url = url_for_path(partnership_path)
@@ -662,9 +680,9 @@ module Coach4rb
 
     # Retrieves a subscription.
     #
-    # ====Example
-    #
-    # subscription = @coach.subscription_by_uri '/CyberCoachServer/resources/users/newuser4/'
+    # ====Examples
+    # @example
+    #   subscription = @coach.subscription_by_uri '/CyberCoachServer/resources/users/newuser4/'
     #
     def subscription_by_uri(uri, options={})
       raise 'Error: Param uri is nil!' if uri.nil?
@@ -686,17 +704,26 @@ module Coach4rb
     # @param [Hash|nil] options
     #
     # ====Examples
-    #
-    # subscription = @coach.subscription subscription
-    # subscription = @coach.subscription subscription, {}
-    # subscription = @coach.subscription 'newuser4', 'running'
-    # subscription = @coach.subscription 'newuser4', 'running', {}
-    # subscription = @coach.subscription 'newuser4','newuser5', 'running'
-    # subscription = @coach.subscription 'newuser4','newuser5', 'running', {}
-    # subscription = @coach.subscription 'newuser4', :running
-    # subscription = @coach.subscription 'newuser4', :running, {}
-    # subscription = @coach.subscription 'newuser4','newuser5', :running
-    # subscription = @coach.subscription 'newuser4','newuser5', :running, {}
+    # @example
+    #   subscription = @coach.subscription subscription
+    # @example
+    #   subscription = @coach.subscription subscription, query: { start: 0, size: 10}
+    # @example
+    #   subscription = @coach.subscription 'newuser4', 'running'
+    # @example
+    #   subscription = @coach.subscription 'newuser4', 'running', query: { start: 0, size: 10}
+    # @example
+    #   subscription = @coach.subscription 'newuser4','newuser5', 'running'
+    # @example
+    #   subscription = @coach.subscription 'newuser4','newuser5', 'running', query: { start: 0, size: 10}
+    # @example
+    #   subscription = @coach.subscription 'newuser4', :running
+    # @example
+    #   subscription = @coach.subscription 'newuser4', :running, query: { start: 0, size: 10}
+    # @example
+    #   subscription = @coach.subscription 'newuser4','newuser5', :running
+    # @example
+    #   subscription = @coach.subscription 'newuser4','newuser5', :running, query: { start: 0, size: 10}
     #
     def subscription(*args)
       first_param, second_param, third_param, fourth_param, = args
@@ -720,10 +747,12 @@ module Coach4rb
 
 
     # Retrieves an entry by its uri.
+    # @param [String] uri
+    # @param [Hash] options
     #
-    # ====Example
-    #
-    # entry = @coach.entry_by_uri '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
+    # ====Examples
+    # @example
+    #   entry = @coach.entry_by_uri '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
     #
     def entry_by_uri(uri, options={})
       raise 'Error: Param uri is nil!' if uri.nil?
@@ -744,12 +773,14 @@ module Coach4rb
 
 
     # Retrieves an entry.
+    # @param [Entry] entry
+    # @param [Hash] options
     #
-    # ====Example
-    #
-    # subscription = @coach.subscription 'arueedlinger', 'running'
-    # subscription_entry = subscription.entries.first
-    # entry = @coach.entry subscription_entry
+    # ====Examples
+    # @example
+    #   subscription = @coach.subscription 'arueedlinger', 'running'
+    #   subscription_entry = subscription.entries.first
+    #   entry = @coach.entry subscription_entry
     #
     def entry(entry, options={})
       raise 'Error: Param entry is nil!' if entry.nil?

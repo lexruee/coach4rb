@@ -90,6 +90,10 @@ module Coach4rb
       # @param [String] password
       # @param [Coach] coach
       #
+      # ====Examples
+      # @example
+      #   @proxy = Coach4rb::Proxy::Access.new 'arueedlinger', 'muha', @coach_client
+      #
       def initialize(username, password, coach)
         @username = username
         @password = password
