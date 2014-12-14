@@ -1,0 +1,3968 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Coach4rb::Coach
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!Coach4rb/Coach.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Coach4rb.html" title="Coach4rb (module)">Coach4rb</a></span></span>
+     &raquo; 
+    <span class="title">Coach</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Coach4rb::Coach
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Coach4rb::Coach</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="Mixin/BasicAuth.html" title="Coach4rb::Mixin::BasicAuth (module)">Mixin::BasicAuth</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/coach4rb/coach.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#authenticate-instance_method" title="#authenticate (instance method)">- (User) <strong>authenticate</strong>(username, password) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Authenticates a user against the Cyber Coach Webservice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#available%3F-instance_method" title="#available? (instance method)">- (Boolean) <strong>available?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Checks if the Cyber Coach Webservice is available.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#breakup_between-instance_method" title="#breakup_between (instance method)">- (Boolean) <strong>breakup_between</strong>(first_user, second_user, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Breaks up a partnership between two users.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_entry-instance_method" title="#create_entry (instance method)">- (Entry|Boolean) <strong>create_entry</strong>(user_partnership, sport, options = {}, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates an entry with public visibility as default.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_partnership-instance_method" title="#create_partnership (instance method)">- (Partnership) <strong>create_partnership</strong>(first_user, second_user, options = {}, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a partnership with public visibility as default.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_subscription-instance_method" title="#create_subscription (instance method)">- (Subscription) <strong>create_subscription</strong>(user_partnership, sport, options = {}, &amp;block) </a>
+    
+
+    
+      (also: #update_subscription, #subscribe)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a subscription with public visibility as default.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_user-instance_method" title="#create_user (instance method)">- (User) <strong>create_user</strong>(options = {}, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a user with public visibility as default.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_entry-instance_method" title="#delete_entry (instance method)">- (Boolean) <strong>delete_entry</strong>(entry, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes an entry..</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_partnership-instance_method" title="#delete_partnership (instance method)">- (Boolean) <strong>delete_partnership</strong>(partnership, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a partnership.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_subscription-instance_method" title="#delete_subscription (instance method)">- (Boolean) <strong>delete_subscription</strong>(subscription, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a subscription.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_user-instance_method" title="#delete_user (instance method)">- (Boolean) <strong>delete_user</strong>(user, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#entry-instance_method" title="#entry (instance method)">- (Object) <strong>entry</strong>(entry, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves an entry.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#entry_by_uri-instance_method" title="#entry_by_uri (instance method)">- (Object) <strong>entry_by_uri</strong>(uri, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves an entry by its uri.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Coach) <strong>initialize</strong>(client, response_parser, debug) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a Coach client for the cyber coach webservcie.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#partnership-instance_method" title="#partnership (instance method)">- (Partnership) <strong>partnership</strong>(first_username, second_username, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves a partnership by the first username and second username.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#partnership_by_uri-instance_method" title="#partnership_by_uri (instance method)">- (Partnership) <strong>partnership_by_uri</strong>(uri, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves a partnership by its uri.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#partnerships-instance_method" title="#partnerships (instance method)">- (PageResource) <strong>partnerships</strong>(options = {query: {}}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves partnerships.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subscription-instance_method" title="#subscription (instance method)">- (Object) <strong>subscription</strong>(*args) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves a subscription.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subscription_by_uri-instance_method" title="#subscription_by_uri (instance method)">- (Object) <strong>subscription_by_uri</strong>(uri, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves a subscription.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#unsubscribe-instance_method" title="#unsubscribe (instance method)">- (Boolean) <strong>unsubscribe</strong>(user_partnership, sport, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a subscription.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_entry-instance_method" title="#update_entry (instance method)">- (Entry|Boolean) <strong>update_entry</strong>(entry, options = {}, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Updates an entry.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_user-instance_method" title="#update_user (instance method)">- (User) <strong>update_user</strong>(user, options = {}, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Updates a user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user-instance_method" title="#user (instance method)">- (User) <strong>user</strong>(user, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves a user by its username.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_by_uri-instance_method" title="#user_by_uri (instance method)">- (User) <strong>user_by_uri</strong>(uri, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves a user by its uri.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_exists%3F-instance_method" title="#user_exists? (instance method)">- (Boolean) <strong>user_exists?</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tests if the user given its username exists..</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#username_available%3F-instance_method" title="#username_available? (instance method)">- (Boolean) <strong>username_available?</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tests if the given username is available.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users-instance_method" title="#users (instance method)">- (PageResource) <strong>users</strong>(options = {query: {}}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves users.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Mixin/BasicAuth.html" title="Coach4rb::Mixin::BasicAuth (module)">Mixin::BasicAuth</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Mixin/BasicAuth.html#included-class_method" title="Coach4rb::Mixin::BasicAuth.included (method)">included</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Coach4rb::Coach (class)">Coach</a></span></tt>) <strong>initialize</strong>(client, response_parser, debug) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a Coach client for the cyber coach webservcie.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>client</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Client.html" title="Coach4rb::Client (class)">Client</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>response_parser</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ResponseParser.html" title="Coach4rb::ResponseParser (class)">ResponseParser</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>debug</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='comma'>,</span> <span class='id identifier rubyid_response_parser'>response_parser</span><span class='comma'>,</span> <span class='id identifier rubyid_debug'>debug</span><span class='rparen'>)</span>
+  <span class='ivar'>@client</span> <span class='op'>=</span> <span class='id identifier rubyid_client'>client</span>
+  <span class='ivar'>@response_parser</span> <span class='op'>=</span> <span class='id identifier rubyid_response_parser'>response_parser</span>
+  <span class='ivar'>@debug</span> <span class='op'>=</span> <span class='id identifier rubyid_debug'>debug</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="authenticate-instance_method">
+  
+    - (<tt>User</tt>) <strong>authenticate</strong>(username, password) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Authenticates a user against the Cyber Coach Webservice.</p>
+
+<h4 id="label-Example">Example</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_authenticate'>authenticate</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>test</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>username</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>password</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>User</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_authenticate'>authenticate</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='id identifier rubyid_password'>password</span><span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='label'>authorization:</span> <span class='id identifier rubyid_basic_auth_encryption'>basic_auth_encryption</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='id identifier rubyid_password'>password</span><span class='rparen'>)</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/authenticateduser/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span>
+        <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_response'>response</span>
+        <span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+      <span class='kw'>else</span>
+        <span class='kw'>false</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Could not authenticate user!</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="available?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>available?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Checks if the Cyber Coach Webservice is available.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_available?'>available?</span></code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_available?'>available?</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span> <span class='rbrace'>}</span> <span class='kw'>rescue</span> <span class='kw'>false</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="breakup_between-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>breakup_between</strong>(first_user, second_user, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Breaks up a partnership between two users.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>first_user</span>
+      
+      
+        <span class='type'>(<tt>User|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>second_user</span>
+      
+      
+        <span class='type'>(<tt>User|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 271</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_breakup_between'>breakup_between</span><span class='lparen'>(</span><span class='id identifier rubyid_first_user'>first_user</span><span class='comma'>,</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param first_user is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param second_user is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span>
+           <span class='id identifier rubyid_partnership_path'>partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span>
+         <span class='kw'>elsif</span> <span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+           <span class='id identifier rubyid_partnership_path'>partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_user'>first_user</span><span class='comma'>,</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='rparen'>)</span>
+         <span class='kw'>else</span>
+           <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameters!</span><span class='tstring_end'>&#39;</span></span>
+         <span class='kw'>end</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_entry-instance_method">
+  
+    - (<tt>Entry|Boolean</tt>) <strong>create_entry</strong>(user_partnership, sport, options = {}, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates an entry with public visibility as default.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_entry'>entry</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_create_entry'>create_entry</span><span class='lparen'>(</span><span class='ivar'>@user</span><span class='comma'>,</span> <span class='symbol'>:running</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_e'>e</span><span class='op'>|</span>
+   <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_comment'>comment</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>test</span><span class='tstring_end'>&#39;</span></span>
+   <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_number_of_rounds'>number_of_rounds</span> <span class='op'>=</span> <span class='int'>10</span>
+   <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_public_visible'>public_visible</span> <span class='op'>=</span> <span class='const'>Coach4rb</span><span class='op'>::</span><span class='const'>Privacy</span><span class='op'>::</span><span class='const'>Public</span>
+<span class='kw'>end</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_entry'>entry</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_create_entry'>create_entry</span><span class='lparen'>(</span><span class='ivar'>@user</span><span class='comma'>,</span> <span class='symbol'>:soccer</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_e'>e</span><span class='op'>|</span>
+  <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_comment'>comment</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>test</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_number_of_rounds'>number_of_rounds</span> <span class='op'>=</span> <span class='int'>10</span>
+<span class='kw'>end</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>user_partnership</span>
+      
+      
+        <span class='type'>(<tt>User|Partnership|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Block</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Entry|Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 432</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create_entry'>create_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='comma'>,</span> <span class='id identifier rubyid_sport'>sport</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param user_partnership is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param sport is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_sport'>sport</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_entry_type'>entry_type</span> <span class='op'>=</span> <span class='id identifier rubyid_sport'>sport</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'>Builder</span><span class='op'>::</span><span class='const'>Entry</span><span class='period'>.</span><span class='id identifier rubyid_builder'>builder</span><span class='lparen'>(</span><span class='id identifier rubyid_entry_type'>entry_type</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>Entity</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_sport'>sport</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+        <span class='kw'>elsif</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_sport'>sport</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameter!</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_to_xml'>to_xml</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_uri'>uri</span> <span class='op'>=</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_headers'>headers</span><span class='lbracket'>[</span><span class='symbol'>:location</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_entry_by_uri'>entry_by_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+      <span class='kw'>else</span>
+        <span class='kw'>false</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_partnership-instance_method">
+  
+    - (<tt>Partnership</tt>) <strong>create_partnership</strong>(first_user, second_user, options = {}, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a partnership with public visibility as default.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_create_partnership'>create_partnership</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wanze2</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_create_partnership'>create_partnership</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wanze2</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_p'>p</span><span class='op'>|</span>
+   <span class='id identifier rubyid_p'>p</span><span class='period'>.</span><span class='id identifier rubyid_public_visible'>public_visible</span> <span class='op'>=</span> <span class='const'>Coach4rb</span><span class='op'>::</span><span class='const'>Private</span>
+<span class='kw'>end</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>first_user</span>
+      
+      
+        <span class='type'>(<tt>User|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>second_user</span>
+      
+      
+        <span class='type'>(<tt>User|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Partnership</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 217</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create_partnership'>create_partnership</span><span class='lparen'>(</span><span class='id identifier rubyid_first_user'>first_user</span><span class='comma'>,</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param first_user is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param second_user is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span>
+           <span class='id identifier rubyid_partnership_path'>partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span>
+         <span class='kw'>elsif</span> <span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+           <span class='id identifier rubyid_partnership_path'>partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_user'>first_user</span><span class='comma'>,</span> <span class='id identifier rubyid_second_user'>second_user</span><span class='rparen'>)</span>
+         <span class='kw'>else</span>
+           <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameters!</span><span class='tstring_end'>&#39;</span></span>
+         <span class='kw'>end</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'>Builder</span><span class='op'>::</span><span class='const'>Partnership</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='label'>public_visible:</span> <span class='const'>Privacy</span><span class='op'>::</span><span class='const'>Public</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_put'>put</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_to_xml'>to_xml</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_response'>response</span>
+      <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Partnership</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_subscription-instance_method">
+  
+    - (<tt>Subscription</tt>) <strong>create_subscription</strong>(user_partnership, sport, options = {}, &amp;block) 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='update_subscription-instance_method'>update_subscription</span>, <span id='subscribe-instance_method'>subscribe</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a subscription with public visibility as default.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_create_subscription'>create_subscription</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='symbol'>:boxing</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_subscription'>subscription</span><span class='op'>|</span>
+  <span class='id identifier rubyid_subscription'>subscription</span><span class='period'>.</span><span class='id identifier rubyid_public_visible'>public_visible</span> <span class='op'>=</span> <span class='const'>Coach4rb</span><span class='op'>::</span><span class='const'>Privacy</span><span class='op'>::</span><span class='const'>Public</span>
+<span class='kw'>end</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_create_subscription'>create_subscription</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='symbol'>:boxing</span><span class='rparen'>)</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_partnership'>partnership</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_partnership'>partnership</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>asarteam5</span><span class='tstring_end'>&#39;</span></span>
+<span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscribe'>subscribe</span><span class='lparen'>(</span><span class='id identifier rubyid_partnership'>partnership</span><span class='comma'>,</span> <span class='symbol'>:running</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>user_partnership</span>
+      
+      
+        <span class='type'>(<tt>User|Partnership|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sport</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Block</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Subscription</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 315</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create_subscription'>create_subscription</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='comma'>,</span> <span class='id identifier rubyid_sport'>sport</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param user_partnership is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param sport is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_sport'>sport</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_user_path'>subscription_user_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='id identifier rubyid_sport'>sport</span><span class='rparen'>)</span><span class='rparen'>)</span>
+        <span class='kw'>elsif</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>Partnership</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_first_username'>first_username</span> <span class='op'>=</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span>
+          <span class='id identifier rubyid_second_username'>second_username</span> <span class='op'>=</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span>
+          <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_partnership_path'>subscription_partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_username'>first_username</span><span class='comma'>,</span> <span class='id identifier rubyid_second_username'>second_username</span><span class='comma'>,</span> <span class='id identifier rubyid_sport'>sport</span><span class='rparen'>)</span><span class='rparen'>)</span>
+        <span class='kw'>elsif</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='rparen'>)</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameter!</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'>Builder</span><span class='op'>::</span><span class='const'>Subscription</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='label'>public_visible:</span> <span class='const'>Privacy</span><span class='op'>::</span><span class='const'>Public</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_put'>put</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_to_xml'>to_xml</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_response'>response</span>
+      <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Subscription</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_user-instance_method">
+  
+    - (<tt>User</tt>) <strong>create_user</strong>(options = {}, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a user with public visibility as default.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_create_user'>create_user</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+  <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_real_name'>real_name</span><span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>the hoff</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wantsomemoney</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_password'>password</span><span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>test</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_email'>email</span><span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>test@test.com</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_public_visible'>public_visible</span><span class='op'>=</span> <span class='int'>2</span>
+<span class='kw'>end</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Block</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>User</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 113</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create_user'>create_user</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'>Builder</span><span class='op'>::</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='label'>public_visible:</span> <span class='const'>Privacy</span><span class='op'>::</span><span class='const'>Public</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user_path'>user_path</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span><span class='rparen'>)</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_put'>put</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_to_xml'>to_xml</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_response'>response</span>
+      <span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span><span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_entry-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>delete_entry</strong>(entry, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes an entry..</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>entry</span>
+      
+      
+        <span class='type'>(<tt>Entry|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 515</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_entry'>delete_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param entry is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>Entry</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span>
+        <span class='kw'>elsif</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameter!</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_partnership-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>delete_partnership</strong>(partnership, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a partnership</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>partnership</span>
+      
+      
+        <span class='type'>(<tt>Partnership</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 249</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_partnership'>delete_partnership</span><span class='lparen'>(</span><span class='id identifier rubyid_partnership'>partnership</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param partnership is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_partnership'>partnership</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_partnership'>partnership</span><span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_subscription-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>delete_subscription</strong>(subscription, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a subscription.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>subscription</span>
+      
+      
+        <span class='type'>(<tt>Subscription</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 396</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_subscription'>delete_subscription</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription'>subscription</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param subscription is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_subscription'>subscription</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription'>subscription</span><span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_user-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>delete_user</strong>(user, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a user.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_delete_user'>delete_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_delete_user'>delete_user</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>user</span>
+      
+      
+        <span class='type'>(<tt>User\String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 181</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_user'>delete_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param user is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user_path'>user_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameters!</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="entry-instance_method">
+  
+    - (<tt>Object</tt>) <strong>entry</strong>(entry, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves an entry.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>running</span><span class='tstring_end'>&#39;</span></span>
+<span class='id identifier rubyid_subscription_entry'>subscription_entry</span> <span class='op'>=</span> <span class='id identifier rubyid_subscription'>subscription</span><span class='period'>.</span><span class='id identifier rubyid_entries'>entries</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+<span class='id identifier rubyid_entry'>entry</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_entry'>entry</span> <span class='id identifier rubyid_subscription_entry'>subscription_entry</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>entry</span>
+      
+      
+        <span class='type'>(<tt>Entry</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+785
+786
+787
+788
+789
+790
+791
+792
+793
+794
+795
+796
+797
+798
+799</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 785</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_entry'>entry</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param entry is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+      <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Entry</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="entry_by_uri-instance_method">
+  
+    - (<tt>Object</tt>) <strong>entry_by_uri</strong>(uri, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves an entry by its uri.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_entry'>entry</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_entry_by_uri'>entry_by_uri</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/CyberCoachServer/resources/users/wantsomemoney/Running/1138/</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>uri</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+757
+758
+759
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 757</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_entry_by_uri'>entry_by_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param uri is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_uri'>uri</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='kw'>return</span> <span class='kw'>false</span> <span class='kw'>if</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>404</span>
+      <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+      <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Entry</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="partnership-instance_method">
+  
+    - (<tt>Partnership</tt>) <strong>partnership</strong>(first_username, second_username, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves a partnership by the first username and second username.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_partnership'>partnership</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_partnership'>partnership</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>asarteam5</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>first_username</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>second_username</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Partnership</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 647</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_partnership'>partnership</span><span class='lparen'>(</span><span class='id identifier rubyid_first_username'>first_username</span><span class='comma'>,</span> <span class='id identifier rubyid_second_username'>second_username</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param first_username is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_first_username'>first_username</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param second_username is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_second_username'>second_username</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_partnership_path'>partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_username'>first_username</span><span class='comma'>,</span> <span class='id identifier rubyid_second_username'>second_username</span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Partnership</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="partnership_by_uri-instance_method">
+  
+    - (<tt>Partnership</tt>) <strong>partnership_by_uri</strong>(uri, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves a partnership by its uri.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_partnership'>partnership</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_partnership_by_uri'>partnership_by_uri</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/CyberCoachServer/resources/partnerships/arueedlinger;asarteam5/</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>uri</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Partnership</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 624</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_partnership_by_uri'>partnership_by_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param uri is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_uri'>uri</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Partnership</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="partnerships-instance_method">
+  
+    - (<tt>PageResource</tt>) <strong>partnerships</strong>(options = {query: {}}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves partnerships.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_partnerships'>partnerships</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_partnerships'>partnerships</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_partnerships'>partnerships</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_partnerships'>partnerships</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>size:</span> <span class='int'>10</span><span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{query: {}}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>PageResource</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+671
+672
+673
+674
+675
+676
+677
+678</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 671</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_partnerships'>partnerships</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='label'>query:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_partnership_path'>partnership_path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Page</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span><span class='comma'>,</span> <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Partnership</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="subscription-instance_method">
+  
+    - (<tt>Object</tt>) <strong>subscription</strong>(*args) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves a subscription.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='id identifier rubyid_subscription'>subscription</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='id identifier rubyid_subscription'>subscription</span><span class='comma'>,</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>size:</span> <span class='int'>10</span><span class='rbrace'>}</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>running</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>running</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>size:</span> <span class='int'>10</span><span class='rbrace'>}</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser5</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>running</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser5</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>running</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>size:</span> <span class='int'>10</span><span class='rbrace'>}</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:running</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:running</span><span class='comma'>,</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>size:</span> <span class='int'>10</span><span class='rbrace'>}</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser5</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:running</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription'>subscription</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newuser5</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:running</span><span class='comma'>,</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>size:</span> <span class='int'>10</span><span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>first_user</span>
+      
+      
+        <span class='type'>(<tt>String|Subscription</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>| subscription</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>second_user</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>| sport</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sport</span>
+      
+      
+        <span class='type'>(<tt>String|Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>| options</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash|nil</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 728</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_subscription'>subscription</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_first_param'>first_param</span><span class='comma'>,</span> <span class='id identifier rubyid_second_param'>second_param</span><span class='comma'>,</span> <span class='id identifier rubyid_third_param'>third_param</span><span class='comma'>,</span> <span class='id identifier rubyid_fourth_param'>fourth_param</span><span class='comma'>,</span> <span class='op'>=</span> <span class='id identifier rubyid_args'>args</span>
+  <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_first_param'>first_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>Entry</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_first_param'>first_param</span><span class='period'>.</span><span class='id identifier rubyid_uri'>uri</span>
+                   <span class='lbracket'>[</span><span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_first_param'>first_param</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_second_param'>second_param</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rbracket'>]</span>
+                 <span class='kw'>elsif</span> <span class='id identifier rubyid_first_param'>first_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_second_param'>second_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_third_param'>third_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='id identifier rubyid_third_param'>third_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Symbol</span><span class='rparen'>)</span><span class='rparen'>)</span>
+                   <span class='lbracket'>[</span><span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_partnership_path'>subscription_partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_param'>first_param</span><span class='comma'>,</span> <span class='id identifier rubyid_second_param'>second_param</span><span class='comma'>,</span> <span class='id identifier rubyid_third_param'>third_param</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_fourth_param'>fourth_param</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rbracket'>]</span>
+                 <span class='kw'>elsif</span> <span class='id identifier rubyid_first_param'>first_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span><span class='id identifier rubyid_second_param'>second_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='id identifier rubyid_second_param'>second_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Symbol</span><span class='rparen'>)</span><span class='rparen'>)</span>
+                   <span class='lbracket'>[</span><span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_user_path'>subscription_user_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_param'>first_param</span><span class='comma'>,</span> <span class='id identifier rubyid_second_param'>second_param</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_third_param'>third_param</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rbracket'>]</span>
+                 <span class='kw'>elsif</span> <span class='id identifier rubyid_first_param'>first_param</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>Subscription</span><span class='rparen'>)</span>
+                   <span class='lbracket'>[</span><span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_first_param'>first_param</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_second_param'>second_param</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rbracket'>]</span>
+                 <span class='kw'>else</span>
+                   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameters!</span><span class='tstring_end'>&#39;</span></span>
+                 <span class='kw'>end</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Subscription</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="subscription_by_uri-instance_method">
+  
+    - (<tt>Object</tt>) <strong>subscription_by_uri</strong>(uri, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves a subscription.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_subscription'>subscription</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_subscription_by_uri'>subscription_by_uri</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/CyberCoachServer/resources/users/newuser4/</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+  </div>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 687</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_subscription_by_uri'>subscription_by_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param uri is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_uri'>uri</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Subscription</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="unsubscribe-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>unsubscribe</strong>(user_partnership, sport, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a subscription.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span>
+<span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_unsubscribe'>unsubscribe</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='symbol'>:boxing</span><span class='rparen'>)</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_partnership'>partnership</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_partnership'>partnership</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>asarteam5</span><span class='tstring_end'>&#39;</span></span>
+<span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_unsubscribe'>unsubscribe</span><span class='lparen'>(</span><span class='id identifier rubyid_partnership'>partnership</span><span class='comma'>,</span> <span class='symbol'>:running</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>subscription</span>
+      
+      
+        <span class='type'>(<tt>Subscription|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 364</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_unsubscribe'>unsubscribe</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='comma'>,</span> <span class='id identifier rubyid_sport'>sport</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param user_partnership is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param sport is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_sport'>sport</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_user_path'>subscription_user_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='id identifier rubyid_sport'>sport</span><span class='rparen'>)</span><span class='rparen'>)</span>
+        <span class='kw'>elsif</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>Partnership</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_first_username'>first_username</span> <span class='op'>=</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_first_user'>first_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span>
+          <span class='id identifier rubyid_second_username'>second_username</span> <span class='op'>=</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_second_user'>second_user</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span>
+          <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_partnership_path'>subscription_partnership_path</span><span class='lparen'>(</span><span class='id identifier rubyid_first_username'>first_username</span><span class='comma'>,</span> <span class='id identifier rubyid_second_username'>second_username</span><span class='comma'>,</span> <span class='id identifier rubyid_sport'>sport</span><span class='rparen'>)</span><span class='rparen'>)</span>
+        <span class='kw'>elsif</span> <span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_user_partnership'>user_partnership</span><span class='rparen'>)</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameter!</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_entry-instance_method">
+  
+    - (<tt>Entry|Boolean</tt>) <strong>update_entry</strong>(entry, options = {}, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Updates an entry.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_entry'>entry</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_entry_by_uri'>entry_by_uri</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/CyberCoachServer/resources/users/wantsomemoney/Running/1138/</span><span class='tstring_end'>&#39;</span></span>
+<span class='id identifier rubyid_updated_entry'>updated_entry</span> <span class='op'>=</span> <span class='ivar'>@proxy</span><span class='period'>.</span><span class='id identifier rubyid_update_entry'>update_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_entry'>entry</span><span class='op'>|</span>
+  <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_comment'>comment</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Test!!</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_uri'>uri</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/CyberCoachServer/resources/users/wantsomemoney/Running/1138/</span><span class='tstring_end'>&#39;</span></span>
+<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@proxy</span><span class='period'>.</span><span class='id identifier rubyid_update_entry'>update_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_entry'>entry</span><span class='op'>|</span>
+  <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_comment'>comment</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Test!</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>entry</span>
+      
+      
+        <span class='type'>(<tt>Entry|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Block</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Entry|Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 484</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_entry'>update_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param entry is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_entry_type'>entry_type</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>Entry</span><span class='rparen'>)</span>
+                      <span class='lbracket'>[</span><span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='rbracket'>]</span>
+                    <span class='kw'>else</span>
+                      <span class='op'>*</span><span class='comma'>,</span> <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+                      <span class='id identifier rubyid_type'>type</span> <span class='op'>=</span> <span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+                      <span class='lbracket'>[</span><span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_type'>type</span><span class='rbracket'>]</span>
+                    <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'>Builder</span><span class='op'>::</span><span class='const'>Entry</span><span class='period'>.</span><span class='id identifier rubyid_builder'>builder</span><span class='lparen'>(</span><span class='id identifier rubyid_entry_type'>entry_type</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_put'>put</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_to_xml'>to_xml</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+      <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Entry</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_user-instance_method">
+  
+    - (<tt>User</tt>) <strong>update_user</strong>(user, options = {}, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Updates a user.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>@coach.update_user(user) do |user
+  user.real_name= &#39;the hoff&#39;
+  user.password= &#39;test&#39;
+  user.email= &#39;test@test.com&#39;
+  user.public_visible= 2
+end</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>user</span>
+      
+      
+        <span class='type'>(<tt>User|String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Block</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>User</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 146</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_user'>update_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param user is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'>Builder</span><span class='op'>::</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_uri'>uri</span>
+          <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+        <span class='kw'>end</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_put'>put</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_to_xml'>to_xml</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+      <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_response'>response</span>
+      <span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span> <span class='kw'>if</span> <span class='id identifier rubyid_debug'>debug</span>
+    <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="user-instance_method">
+  
+    - (<tt>User</tt>) <strong>user</strong>(user, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves a user by its username.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span> <span class='id identifier rubyid_a_user'>a_user</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>soze:</span> <span class='int'>10</span> <span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>username</span>
+      
+      
+        <span class='type'>(<tt>String|User</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>| user</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>User</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 550</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_user'>user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param user is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_resource'>url_for_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+        <span class='kw'>elsif</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user_path'>user_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span><span class='rparen'>)</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Invalid parameter!</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="user_by_uri-instance_method">
+  
+    - (<tt>User</tt>) <strong>user_by_uri</strong>(uri, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves a user by its uri.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_user_by_uri'>user_by_uri</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/CyberCoachServer/resources/users/arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>soze:</span> <span class='int'>10</span> <span class='rbrace'>}</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_user_by_uri'>user_by_uri</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/CyberCoachServer/resources/users/arueedlinger</span><span class='tstring_end'>&#39;</span></span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>uri</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>User</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 581</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_user_by_uri'>user_by_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Param uri is nil!</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_uri'>uri</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_uri'>url_for_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="user_exists?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>user_exists?</strong>(username) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Tests if the user given its username exists..</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_user_exsists?'>user_exsists?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>username</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+74
+75
+76
+77
+78
+79
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 74</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_user_exists?'>user_exists?</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user_path'>user_path</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='int'>200</span> <span class='rbrace'>}</span>
+  <span class='kw'>rescue</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Could not test user existence!</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="username_available?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>username_available?</strong>(username) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Tests if the given username is available.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_username_available'>username_available</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>arueedlinger</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>username</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+58
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 58</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_username_available?'>username_available?</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span>
+  <span class='comment'># check if username is alphanumeric and that it contains at least one letter
+</span>  <span class='kw'>return</span> <span class='kw'>false</span> <span class='kw'>unless</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^[a-zA-Z0-9]{1,}$</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_username'>username</span>
+  <span class='op'>!</span><span class='id identifier rubyid_user_exists?'>user_exists?</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span> <span class='kw'>rescue</span> <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Error: Could not test username availability!</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="users-instance_method">
+  
+    - (<tt>PageResource</tt>) <strong>users</strong>(options = {query: {}}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves users.</p>
+
+<h4 id="label-Examples">Examples</h4>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_users'>users</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_users'>users</span></code></pre>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_users'>users</span> <span class='op'>=</span> <span class='ivar'>@coach</span><span class='period'>.</span><span class='id identifier rubyid_users'>users</span> <span class='label'>query:</span> <span class='lbrace'>{</span> <span class='label'>start:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>size:</span> <span class='int'>10</span><span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{query: {}}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>PageResource</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+604
+605
+606
+607
+608
+609
+610
+611</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coach4rb/coach.rb', line 604</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_users'>users</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='label'>query:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_for_path'>url_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_user_path'>user_path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_append_query_params'>append_query_params</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_response'>response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_a_hash'>a_hash</span> <span class='op'>=</span> <span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+    <span class='const'>Resource</span><span class='op'>::</span><span class='const'>Page</span><span class='period'>.</span><span class='id identifier rubyid_from_coach'>from_coach</span> <span class='id identifier rubyid_a_hash'>a_hash</span><span class='comma'>,</span> <span class='const'>Resource</span><span class='op'>::</span><span class='const'>User</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Dec 14 02:00:57 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.3).
+</div>
+
+  </body>
+</html>
