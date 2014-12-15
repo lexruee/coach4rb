@@ -95,7 +95,7 @@ Coach4rb can be easily configured as the following example shows:
 
 ```
 
-Without the debug options all coach4rb exceptions are catched. By adding the option debug: true
+By setting the debug option to false all coach4rb exceptions are catched. By setting the debug option to true
 all exceptions are 'ducked' to the caller.
 
 
