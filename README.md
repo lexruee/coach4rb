@@ -111,7 +111,7 @@ all exceptions are 'ducked' to the caller.
 ```
 
 
-To be sure that Coach4rb is correctly configured the method ```valid?``` can be executed for testing purposes.
+To be sure that Coach4rb is correctly configured the method ```available?``` can be executed for testing purposes.
 
 ```ruby
 @coach.available? # => true | false
