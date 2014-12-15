@@ -231,7 +231,6 @@ Another way to update a user is to pass a a cyber coach uri to the update_user m
 end
 
 ```
-```
 
 ####Deleting a user
 In the same way a user can be deleted.
@@ -345,7 +344,7 @@ end
 
 ####Creating an entry for a user
 Entries are created by means of the ```create_entry``` method.
-```
+```ruby
  @proxy.create_entry(@user, :running) do |entry|
       entry.comment = 'test'
       entry.number_of_rounds = 10
@@ -359,7 +358,7 @@ The next chapters provide an overview of all available properties tha can be set
 
 ####Creating an entry for a partnership
 
-```
+```ruby
  @partnership = @coach.partnership('arueedlinger','moritz')
  @proxy.create_entry(@partnership, :running) do |entry|
       entry.comment = 'test'
@@ -372,7 +371,7 @@ The next chapters provide an overview of all available properties tha can be set
 ###Updating an entry
 Updating entry for a user or partnerships works excatly the same. You need to provide the create_entry method
 a valid resource object like a user or a partnership object.
-```
+```ruby
  @user = @coach.user_by_uri '/CyberCoachServer/resources/users/wantsomemoney/'
  @entry = @coach.entry_by_uri '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
  @proxy.create_entry(@user, :running) do |entry|
