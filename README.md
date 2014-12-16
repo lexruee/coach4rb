@@ -201,7 +201,7 @@ In order to update an existing user we need an access proxy. Such an access prox
 and provides access to resources in the scope of a given user. In other words the access proxy contains the necessary
 user credentials that are needed to modify protected resources.
 
-Such a access proxy object can be created as follows:
+Such an access proxy object can be created as follows:
 ```
 #@coach is our coach client, see configuration.
 @proxy = Coach4rb::Proxy::Access.new @coach.username, 'secret', @coach
@@ -374,7 +374,8 @@ a valid resource object like a user or a partnership object.
 ```ruby
  @user = @coach.user_by_uri '/CyberCoachServer/resources/users/wantsomemoney/'
  @entry = @coach.entry_by_uri '/CyberCoachServer/resources/users/wantsomemoney/Running/1138/'
- @proxy.create_entry(@user, :running) do |entry|
+ @proxy = Coach4rb::Proxy::Access.new @user.username, 'secret', @coach
+ @proxy.update_entry(@entry) do |entry|
       entry.comment = 'test'
       entry.number_of_rounds = 10
       entry.public_visible = Coach4rb::Privacy::Public
