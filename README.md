@@ -17,7 +17,18 @@ are retrievable / updatable / deletable by their corresponding cyber coach uri.
 a user.
 
 ##Some examples
-Example: Retrieving a user:
+Example: Creating a coach client
+```ruby
+ @coach = Coach4rb.configure(
+        scheme: 'http',
+        host: 'diufvm31.unifr.ch',
+        port: 8090,
+        path: '/CyberCoachServer/resources'
+    )
+
+```
+
+Example: Retrieving a user
 ```ruby
 @coach_user = @coach.user_by_uri '/CyberCoachServer/resources/users/arueedlinger' # get a user by its uri
 @coach_user = @coach.user 'arueedlinger' # get a user
@@ -31,7 +42,7 @@ Example: Encapsulating a coach client behind a proxy
 @proxy.users query: { start: 0, size: 10 } #get ten users
 ```
 
-Example: Updating a user:
+Example: Updating a user
 ```ruby
 @uri = '/CyberCoachServer/resources/users/arueedlinger'
 @proxy.update_user(@uri) do |user|
