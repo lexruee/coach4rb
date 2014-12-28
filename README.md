@@ -27,6 +27,8 @@ Example: Encapsulating a coach client behind a proxy
 
 ```ruby
 @proxy = Coach4rb::Proxy::Access.new 'arueedlinger', 'muha', @coach #@coach is our coach client
+@proxy.users # get five users
+@proxy.users query: { start: 0, size: 10 } #get ten users
 ```
 
 Example: Updating a user:
