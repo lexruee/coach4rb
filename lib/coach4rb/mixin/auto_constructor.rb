@@ -14,7 +14,7 @@ module Coach4rb
     # ==== Examples
     #
     #   class Test
-    #       include Behaviours::AutoConstructor
+    #       include Mixin::AutoConstructor
     #   end
     #
     #   test = Test.new { name: 'alex' }
